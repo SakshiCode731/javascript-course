@@ -1,0 +1,19 @@
+{
+  "name": "javascript-tutorials",
+  "version": "1.0.0",
+  "description": "JavaScript Tutorial Collection - Learning JavaScript fundamentals",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "javascript",
+    "tutorial",
+    "learning"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
