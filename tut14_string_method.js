@@ -23,4 +23,6 @@ console.log(fr[3])
 console.log(fr)
 
 
-  
+let text = "Hello world!";
+console.log(text.repeat(4));
+console.log(text.split(" ,"));
