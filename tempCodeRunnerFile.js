@@ -1,2 +1,3 @@
-let r2 = num.shift()
-// console.log(r2, num)
+console.log(num.length)
+delete num[0]
+console.log(num.length)
