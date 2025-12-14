@@ -1,0 +1,9 @@
+.rows {
+  display: flex;
+  justify-content: center; /* center the row */
+  gap: 20px;               /* space between cards */
+}
+
+.card {
+  width: 18rem;            /* same as inline style */
+}
