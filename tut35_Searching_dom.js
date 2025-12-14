@@ -23,16 +23,22 @@ if (alertTrigger) {
 // ctitle.style.color = "red"
 let ctitle = document.getElementById("firstcardtitle")
 ctitle.style.color = "green"
-let ctitle1 = document.getElementById("secondcardtitle")
-ctitle1.style.color = "blue"
-let ctitle2 = document.getElementById("thirdcardtitle")
-ctitle2.style.color = "red"
+// let ctitle1 = document.getElementById("secondcardtitle")
+// ctitle1.style.color = "blue"
+// let ctitle2 = document.getElementById("thirdcardtitle")
+// ctitle2.style.color = "red"
 
-document.getElementById(".this").style.color = "red"
+let ctitles = document.querySelectorAll(".card-title")
+ctitles[0].style.color = "blue"
+ctitles[1].style.color = "red"
+ctitles[2].style.color = "green"
+console.log(ctitles)
+
+document.querySelector(".this").style.color = "black"
+document.querySelector(".this").style.background = "green"
+
+console.log(document.body.getElementsByTagName("a"))
+console.log(document.querySelector(".card").getElementsByTagName("a"))
+console.log(document.getElementsByName("search"))
 
 
-// let ctitles = document.querySelectorAll(".card-title")
-// ctitles[0].style.color = "blue"
-// ctitles[1].style.color = "red"
-// ctitles[2].style.color = "green"
-// console.log(ctitles)
