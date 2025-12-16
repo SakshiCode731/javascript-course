@@ -22,4 +22,4 @@ const match = (cpu, user) => {
 };
 
 let result = match(cpu, user);
-document.write(`CPU: ${cpu} <br> User: ${user} <br>  The winner is: ${result}`);
+document.write(`CPU: ${cpu} <br> User: ${user} <br>  The winner is: ${result.toUpperCase()}`);
