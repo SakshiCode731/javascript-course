@@ -31,9 +31,12 @@ const loadScript = (src) => {
   })
 }
 
-let p1 = loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap1.bundle.min.jss")
+let p1 = loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js")
 p1.then((value)=>{
   console.log(value)
+  return loadScript("https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js")
+}).then((value)=>{
+  console.log("Second Script loaded")
 }).catch((error)=>{
   console.log("We are sorry not we are having problems loading this script")
 })
