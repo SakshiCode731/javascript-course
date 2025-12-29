@@ -5,11 +5,8 @@ let images = [
   "code4.jpg",
   "code2.png",
   "code3.jpg",
-   "code1.jpg"
-
-
-  
-];
+   "code1.jpg",
+  ];
 
 let url = "https://competeapi.vercel.app/contests/upcoming/";
 let response = fetch(url);
@@ -52,6 +49,22 @@ response.then((v) => {
 
     cardContainer.innerHTML = ihtml;
 });
+
+// console.log("search working");
+function searchContest() {
+    let input = document.getElementById("searchInput").value.toLowerCase();
+    let cards = document.getElementsByClassName("contest-card");
+
+    for (let i = 0; i < cards.length; i++) {
+        let title = cards[i].getAttribute("data-title").toLowerCase();
+
+        if (title.includes(input)) {
+            cards[i].style.display = "block";
+        } else {
+            cards[i].style.display = "none";
+        }
+    }
+}
 
 
 
