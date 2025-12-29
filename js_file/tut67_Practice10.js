@@ -24,8 +24,9 @@ response.then((v) => {
         console.log(contests[item]);
 
         ihtml += `
-<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-  <div class="card h-100">
+<div class="col-lg-4 col-md-6 col-sm-12 mb-4 contest-card"
+     data-title="${contests[item].title}">
+
    <img src="${images[i % images.length]}" class="card-img-top" alt="contest image">
     <div class="card-body">
       <h5 class="card-title">${contests[item].title}</h5>
@@ -50,7 +51,7 @@ response.then((v) => {
     cardContainer.innerHTML = ihtml;
 });
 
-// console.log("search working");
+console.log("search working");
 function searchContest() {
     let input = document.getElementById("searchInput").value.toLowerCase();
     let cards = document.getElementsByClassName("contest-card");
