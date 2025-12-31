@@ -1,0 +1,38 @@
+
+html, body{
+  height: 100%;
+  width: 1005;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+  font-size: 22px;
+  color: green;
+  background: black;
+}
+
+#image{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+}
+
+#container{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#terminal{
+  position:  absolute;
+  top: 20px;
+  left: 20px;
+  color: rgb(6, 240, 6);
+  font-size: 15px;
+  /* background: rgb(6, 54, 6); */
+  overflow-y: auto;
+  white-space: pre-wrap;
+}
