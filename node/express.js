@@ -14,32 +14,48 @@
 //   console.log(`HTTP server running on http://localhost:${port}`)
 // })
 
-const express = require('express')
-const app = express()
-const port = 5001
+// const express = require('express')
+// const app = express()
+// const port = 5001
+
+// app.get('/', (req, res) => {
+//   console.log(req)
+//   res.send('Hello World')
+// })
+
+// app.get('/about', (req, res) => {
+//   res.send('about')
+// })
+
+// app.get('/contact', (req, res) => {
+//   res.send('contact')
+// })
+
+// app.get('/map', (req, res) => {
+//   res.send('map')
+// })
+
+// app.use(express.static('public')) // ⬅ move BELOW routes
+
+// app.listen(port, () => {
+//   console.log(`Server running at http://localhost:${port}`)
+// })
+
+
+
+const express = require('express');
+const app = express();
+const port = 5001;
 
 app.get('/', (req, res) => {
-  console.log(req)
-  res.send('Hello World')
-})
+    // Get the 'name' query parameter from URL
+    const name = req.query.name || 'Guest'; // default to 'Guest' if no name
+    console.log(`Name from Query: ${name}`);
 
-app.get('/about', (req, res) => {
-  res.send('about')
-})
-
-app.get('/contact', (req, res) => {
-  res.send('contact')
-})
-
-app.get('/map', (req, res) => {
-  res.send('map')
-})
-
-app.use(express.static('public')) // ⬅ move BELOW routes
+    // Send response to browser
+    res.send(`<h1>Hello, ${name}!</h1>`);
+});
 
 app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`)
-})
-
-
-
+    console.log(`Server running at http://localhost:${port}`);
+});
