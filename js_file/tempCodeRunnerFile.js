@@ -1,1 +1,4 @@
-'https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3'
+
+let fruit = "Bana\"na"
+console.log(fruit)
+console.log(name.fruit)
