@@ -15,6 +15,6 @@ console.log(sentence)
 // Escape Sequence Characters
 // let fruit = 'Bana\'na'
 // console.log(fruit)
-let fruit = "Bana\"na" // it not escape the double quote inside double quote
+let fruit = "Bana\"nas" // it not escape the double quote inside double quote
 console.log(fruit)
 console.log(fruit.length)
