@@ -21,6 +21,6 @@
 // let r3 = num.unshift(78)
 // console.log(r3, num)//add element to the beggining and add new array length
 
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
+const fruits = ["Banana", "Orange", "Apple", "Mango","Grapes"];
 let fruit = fruits.at(2);
 console.log(fruit)
