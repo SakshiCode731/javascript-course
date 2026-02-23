@@ -14,8 +14,8 @@ let arr = Array.from(name) // make string from array
 console.log(arr)
 
 //for...of
-for (let i of num){
-  console.log(i)
+for (let item of num){
+  console.log(item)
 }
 
 //for...in
