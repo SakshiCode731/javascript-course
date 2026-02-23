@@ -8,10 +8,10 @@ console.log(a)
 
 //Array filter method
 let arr2 = [45, 23, 21, 0, 3, 5]
-let a2 = arr2.filter((a)=>{
+let a3 = arr2.filter((a)=>{
   return a<10
 })
-console.log(a2)
+console.log(a3)
 
 // Array reduce method
 let arr3 = [1, 2, 3, 5, 2, 1]
