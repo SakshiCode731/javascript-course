@@ -12,9 +12,9 @@ for(let i =0;i<5;i++){
 console.timeEnd("forLoop")
 
 console.time("whileLoop")
-let i = 0;
-while(i<5){
+let a = 0;
+while(a<5){
   console.log(233)
-  i++;
+  a++;
 }
 console.timeEnd("whileLoop")
